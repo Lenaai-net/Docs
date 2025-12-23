@@ -184,12 +184,9 @@ curl -X POST 'https://api.lenaai.net/client/logout' \
 
 Retrieve a paginated list of all conversations (leads) for your client account.
 
-**Endpoint:** `GET /messages/all/{client_id}`
+**Endpoint:** `GET /messages/all`
 
 **Authentication:** Required (Bearer token)
-
-**Path Parameters:**
-- `client_id` (string, required): Your client ID (automatically validated against your authenticated account)
 
 **Query Parameters:**
 - `limit` (integer, optional): Number of users per page
@@ -241,7 +238,8 @@ Retrieve a paginated list of all conversations (leads) for your client account.
 
 **Example Request (cURL):**
 ```bash
-curl -X GET 'https://api.lenaai.net/messages/all/demo?limit=50&direction=forward' \
+
+curl -X GET 'https://api.lenaai.net/messages/all?limit=50&direction=forward' \
   -H 'Authorization: Bearer your-access-token-here'
 ```
 
@@ -293,8 +291,6 @@ curl -X GET 'https://api.lenaai.net/messages/all/demo?limit=50&direction=forward
   "error_message": null
 }
 ```
-
-**Security Note:** You can only access data for your own client_id. The API automatically validates that the `client_id` in the path matches your authenticated account.
 
 ---
 
