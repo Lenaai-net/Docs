@@ -12,7 +12,7 @@ Learn how to embed the Lena Chat widget into your website using an HTML `<iframe
 
 ---
 
-### [Messages API Documentation](./MESSAGES_API_DOCUMENTATION.md)
+### [Leads Messages API Documentation](./MESSAGES_API_DOCUMENTATION.md)
 
 Complete API reference for accessing conversation data programmatically. Includes authentication, endpoints for retrieving conversations and messages, code examples, and security best practices.
 
